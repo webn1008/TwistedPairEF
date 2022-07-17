@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using TwistedPairEF.Models;
 
 namespace TwistedPairEF.Data
 {
@@ -9,5 +10,8 @@ namespace TwistedPairEF.Data
             : base(options)
         {
         }
+
+        public DbSet<PairModel> PairsModel { get; set; }
+
     }
 }

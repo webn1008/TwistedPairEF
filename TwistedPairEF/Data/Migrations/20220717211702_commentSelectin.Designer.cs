@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TwistedPairEF.Data;
 
@@ -11,9 +12,10 @@ using TwistedPairEF.Data;
 namespace TwistedPairEF.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220717211702_commentSelectin")]
+    partial class commentSelectin
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -232,21 +234,9 @@ namespace TwistedPairEF.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("FirstBinderColor")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstPair")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SecondBinderColor")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SecondPair")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
-                    b.ToTable("PairsModel", (string)null);
+                    b.ToTable("PairsModel");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
