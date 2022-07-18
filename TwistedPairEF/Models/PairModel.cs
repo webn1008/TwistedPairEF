@@ -8,8 +8,8 @@ namespace TwistedPairEF.Models
         [Required]
         [Range(26, 600)]
         public int PairNumber { get; set; } = 0;
-        public string? FirstPair { get; set; }
-        public string? SecondPair { get; set; }
+        public string? FirstColor { get; set; }
+        public string? SecondColor { get; set; }
         public string? FirstBinderColor { get; set; }
         public string? SecondBinderColor { get; set; }
 

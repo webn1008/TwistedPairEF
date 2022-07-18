@@ -13,5 +13,13 @@ namespace TwistedPairEF.Data
 
         public DbSet<PairModel> PairsModel { get; set; }
 
+        //protected override void OnModelCreating(ModelBuilder builder)
+        //{
+        //    ModelBuilder.Entity<PairModel>().HasData(new PairModel
+        //    {
+        //        Id = 1,
+        //        FirstPair = "White"
+        //    });
+        //}
     }
 }
