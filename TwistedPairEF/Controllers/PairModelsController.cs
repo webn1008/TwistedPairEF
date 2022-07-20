@@ -11,7 +11,7 @@ using TwistedPairEF.Models;
 
 namespace TwistedPairEF.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class PairModelsController : Controller
     {
         private readonly ApplicationDbContext _context;
