@@ -1,0 +1,54 @@
+﻿@model TwistedPairEF.Models.PairModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>PairModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="PairNumber" class="control-label"></label>
+                <input asp-for="PairNumber" class="form-control" />
+                <span asp-validation-for="PairNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstColor" class="control-label"></label>
+                <input asp-for="FirstColor" class="form-control" />
+                <span asp-validation-for="FirstColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SecondColor" class="control-label"></label>
+                <input asp-for="SecondColor" class="form-control" />
+                <span asp-validation-for="SecondColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstBinderColor" class="control-label"></label>
+                <input asp-for="FirstBinderColor" class="form-control" />
+                <span asp-validation-for="FirstBinderColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SecondBinderColor" class="control-label"></label>
+                <input asp-for="SecondBinderColor" class="form-control" />
+                <span asp-validation-for="SecondBinderColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

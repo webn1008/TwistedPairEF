@@ -17,7 +17,7 @@ namespace TwistedPairEF.Data
         {
             modelBuilder.Entity<PairModel>().HasData(new PairModel
             {
-                //Id = 1,
+                Id = 1,
                 PairNumber = 1,
                 FirstColor = "White",
                 SecondColor = "Blue",
