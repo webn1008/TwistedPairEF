@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Nodes;
 using TwistedPairEF.Models;
 
 namespace TwistedPairEF.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext, ReadColors
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -13,11 +14,12 @@ namespace TwistedPairEF.Data
 
         public DbSet<PairModel> PairsModel { get; set; }
 
+        var jsonValue = ReadColors(filename);
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<PairModel>().HasData(new PairModel
             {
-                Id = 1,
+                JsonValue.Id[0],
                 PairNumber = 1,
                 FirstColor = "White",
                 SecondColor = "Blue",
