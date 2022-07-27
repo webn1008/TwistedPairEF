@@ -5,7 +5,7 @@ using TwistedPairEF.Models;
 
 namespace TwistedPairEF.Data
 {
-    public class ApplicationDbContext : IdentityDbContext, ReadColors
+    public class ApplicationDbContext : IdentityDbContext, ReadColors.IReadColors
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -13,13 +13,16 @@ namespace TwistedPairEF.Data
         }
 
         public DbSet<PairModel> PairsModel { get; set; }
+        
 
-        var jsonValue = ReadColors(filename);
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+           // var jsonValue = ReadColors.IReadColors(fileName);
+
             modelBuilder.Entity<PairModel>().HasData(new PairModel
             {
-                JsonValue.Id[0],
+               // JsonValue.Id[1],
+               Id = 1,
                 PairNumber = 1,
                 FirstColor = "White",
                 SecondColor = "Blue",

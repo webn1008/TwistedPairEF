@@ -5,8 +5,8 @@ namespace TwistedPairEF.Models
     public class PairModel
     {
         public int Id { get; set; }
-        [Required]
-        [Range(26, 600)]
+        
+        [Required(ErrorMessage = "PairNumber is Required.")]
         public int PairNumber { get; set; }
         public string? FirstColor { get; set; }
         public string? SecondColor { get; set; }

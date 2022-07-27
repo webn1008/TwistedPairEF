@@ -32,7 +32,7 @@ namespace TwistedPairEF.Controllers
             return await _context.PairsModel.ToListAsync();
         }
 
-        // GET: api/PairModelsAPI/5
+        // GET Details: api/PairModelsAPI/5
         [HttpGet("{id}")]
         public async Task<ActionResult<PairModel>> GetPairModel(int id)
         {
@@ -84,7 +84,7 @@ namespace TwistedPairEF.Controllers
         // POST: api/PairModelsAPI
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<PairModel>> PostPairModel(PairModel pairModel)
+        public async Task<ActionResult<PairModel>> PostPairModel([Bind("Id,PairNumber,FirstColor,SecondColor,FirstBinderColor,SecondBinderColor")]PairModel pairModel)
         {
           if (_context.PairsModel == null)
           {

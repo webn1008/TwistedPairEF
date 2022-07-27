@@ -6,11 +6,11 @@ namespace TwistedPairEF
 {
     public class ReadColors : Colors
     {
-        protected static string fileName;
+        public static string fileName;
 
-        public interface IReadColors
+        public interface IReadColors 
         {
-
+            
         }
 
         public static Colors Read(string path)
