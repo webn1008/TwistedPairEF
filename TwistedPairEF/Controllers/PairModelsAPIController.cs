@@ -89,7 +89,10 @@ namespace TwistedPairEF.Controllers
           if (_context.PairsModel == null)
           {
               return Problem("Entity set 'ApplicationDbContext.PairsModel'  is null.");
-          }
+          }else if (pairModel.PairNumber == 0)
+            {
+                return Problem("PairNumber is required.");
+            }
             _context.PairsModel.Add(pairModel);
             await _context.SaveChangesAsync();
 

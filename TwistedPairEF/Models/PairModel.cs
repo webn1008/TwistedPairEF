@@ -6,7 +6,7 @@ namespace TwistedPairEF.Models
     {
         public int Id { get; set; }
         
-        [Required(ErrorMessage = "PairNumber is Required.")]
+        [Required]
         public int PairNumber { get; set; }
         public string? FirstColor { get; set; }
         public string? SecondColor { get; set; }

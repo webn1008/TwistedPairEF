@@ -1,0 +1,20 @@
+
+  
+  [
+    {
+      "id": 1,
+      "pairNumber": 1,
+      "firstColor": "white",
+      "secondColor": "blue",
+      "firstBinderColor": null,
+      "secondBinderColor": null
+    },
+    {
+      "id": 2,
+      "pairNumber": 2,
+      "firstColor": "white",
+      "secondColor": "orange",
+      "firstBinderColor": null,
+      "secondBinderColor": null
+    }
+  ]
