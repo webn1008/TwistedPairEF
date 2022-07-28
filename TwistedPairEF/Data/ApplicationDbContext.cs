@@ -13,17 +13,15 @@ namespace TwistedPairEF.Data
         }
 
         public DbSet<PairModel> PairsModel { get; set; }
-        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-           //var jsonValue = ReadColors.Read();
-               
+            var jsonValue = ReadColors.Read();
 
             modelBuilder.Entity<PairModel>().HasData(new PairModel
             {
-                //JsonValue.Id[1],
-               Id = 1,
+                //JsonValue.Id[0],
+                Id = 1,
                 PairNumber = 1,
                 FirstColor = "White",
                 SecondColor = "Blue",
