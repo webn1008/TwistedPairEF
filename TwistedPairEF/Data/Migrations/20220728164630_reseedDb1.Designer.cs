@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TwistedPairEF.Data;
 
@@ -11,9 +12,10 @@ using TwistedPairEF.Data;
 namespace TwistedPairEF.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220728164630_reseedDb1")]
+    partial class reseedDb1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -255,16 +257,9 @@ namespace TwistedPairEF.Data.Migrations
                         new
                         {
                             Id = 1,
-                            FirstColor = "white",
+                            FirstColor = "White",
                             PairNumber = 1,
-                            SecondColor = "blue"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            FirstColor = "white",
-                            PairNumber = 2,
-                            SecondColor = "orange"
+                            SecondColor = "Blue"
                         });
                 });
 

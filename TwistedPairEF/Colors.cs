@@ -1,28 +1,27 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
-using TwistedPairEF.Models;
 
 namespace TwistedPairEF
 {
-    public class Colors: PairModel
+    public class Colors
     {
         [JsonProperty("id")]
-        public new int Id { get; set; }
+        public int Id { get; set; }
 
         [JsonProperty("pairNumber")]
-        public new int PairNumber { get; set; }
+        public int PairNumber { get; set; }
 
         [JsonProperty("firstColor")]
-        public new string? FirstColor { get; set; }
+        public string? FirstColor { get; set; }
 
         [JsonProperty("secondColor")]
-        public new string? SecondColor { get; set; }
+        public string? SecondColor { get; set; }
 
         [JsonProperty("firstBinderColor")]
-        public new string? FirstBinderColor { get; set; }
+        public string? FirstBinderColor { get; set; }
 
         [JsonProperty("secondBinderColor")]
-        public new string? SecondBinderColor { get; set; }
+        public string? SecondBinderColor { get; set; }
     }
 
 }

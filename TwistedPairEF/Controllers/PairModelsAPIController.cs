@@ -33,14 +33,14 @@ namespace TwistedPairEF.Controllers
         }
 
         // GET Details: api/PairModelsAPI/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<PairModel>> GetPairModel(int id)
+        [HttpGet("{pairNumber}")]
+        public async Task<ActionResult<PairModel>> GetPairModel(int pairNumber)
         {
           if (_context.PairsModel == null)
           {
               return NotFound();
           }
-            var pairModel = await _context.PairsModel.FindAsync(id);
+            var pairModel = await _context.PairsModel.FindAsync(pairNumber);
 
             if (pairModel == null)
             {
@@ -70,7 +70,7 @@ namespace TwistedPairEF.Controllers
             {
                 if (!PairModelExists(id))
                 {
-                    return NotFound();
+                    return NotFound($"Could not find pair with ID of {id}");
                 }
                 else
                 {
@@ -78,7 +78,7 @@ namespace TwistedPairEF.Controllers
                 }
             }
 
-            return NoContent();
+            return CreatedAtAction("GetPairModel", pairModel);
         }
 
         // POST: api/PairModelsAPI
@@ -116,7 +116,7 @@ namespace TwistedPairEF.Controllers
             _context.PairsModel.Remove(pairModel);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok("Pair has been deleted.");
         }
 
         private bool PairModelExists(int id)

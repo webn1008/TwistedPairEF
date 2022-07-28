@@ -17,18 +17,27 @@ namespace TwistedPairEF.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             var jsonValue = ReadColors.Read();
-
-            modelBuilder.Entity<PairModel>().HasData(new PairModel
+            for (var i = 0; i < jsonValue.Count; i++)
             {
-                //JsonValue.Id[0],
-                Id = 1,
-                PairNumber = 1,
-                FirstColor = "White",
-                SecondColor = "Blue",
-                FirstBinderColor = null,
-                SecondBinderColor = null
-            });
 
+
+                modelBuilder.Entity<PairModel>().HasData(new PairModel
+                {
+                    Id = jsonValue[i].Id,
+                    PairNumber = jsonValue[i].PairNumber,
+                    FirstColor = jsonValue[i].FirstColor,
+                    SecondColor = jsonValue[i].SecondColor,
+                    FirstBinderColor = jsonValue[i].FirstBinderColor,
+                    SecondBinderColor = jsonValue[i].SecondBinderColor
+
+                    //Id = 1,
+                    //PairNumber = 1,
+                    //FirstColor = "White",
+                    //SecondColor = "Blue",
+                    //FirstBinderColor = null,
+                    //SecondBinderColor = null
+                });
+            }
             base.OnModelCreating(modelBuilder);
         }
     }

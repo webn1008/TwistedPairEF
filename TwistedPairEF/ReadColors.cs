@@ -6,7 +6,7 @@ namespace TwistedPairEF
 {
     public class ReadColors : Colors
     {
-        public static string? fileName;
+        public static string fileName;
 
         public interface IReadColors 
         {
@@ -35,10 +35,11 @@ namespace TwistedPairEF
                 throw;
             }
 
-            static void ReportError(Exception ex)
-            {
-                throw new InvalidOperationException("File not found, please verify the location and name of the file. This is typically in TwistedPair\\bin\\Debug\\net5.0, or TwistedPair\\bin\\Release\\TwistedPair, and named coloredPairs.json. Program will close.");
-            }
+        }
+
+        private static void ReportError(Exception ex)
+        {
+            throw new InvalidOperationException("File not found, please verify the location and name of the file. This is typically in TwistedPair\\bin\\Debug\\net5.0, or TwistedPair\\bin\\Release\\TwistedPair, and named coloredPairs.json. Program will close.");
         }
     }
 }

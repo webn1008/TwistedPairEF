@@ -1,20 +1,210 @@
-
-  
-  [
-    {
-      "id": 1,
-      "pairNumber": 1,
-      "firstColor": "white",
-      "secondColor": "blue",
-      "firstBinderColor": null,
-      "secondBinderColor": null
-    },
-    {
-      "id": 2,
-      "pairNumber": 2,
-      "firstColor": "white",
-      "secondColor": "orange",
-      "firstBinderColor": null,
-      "secondBinderColor": null
-    }
-  ]
+[
+  {
+    "id": 1,
+    "pairNumber": 1,
+    "firstColor": "white",
+    "secondColor": "blue",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 2,
+    "pairNumber": 2,
+    "firstColor": "white",
+    "secondColor": "orange",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 3,
+    "pairNumber": 3,
+    "firstColor": "white",
+    "secondColor": "green",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 4,
+    "pairNumber": 4,
+    "firstColor": "white",
+    "secondColor": "brown",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 5,
+    "pairNumber": 5,
+    "firstColor": "white",
+    "secondColor": "slate",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 6,
+    "pairNumber": 6,
+    "firstColor": "red",
+    "secondColor": "blue",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 7,
+    "pairNumber": 7,
+    "firstColor": "red",
+    "secondColor": "orange",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 8,
+    "pairNumber": 8,
+    "firstColor": "red",
+    "secondColor": "green",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 9,
+    "pairNumber": 9,
+    "firstColor": "red",
+    "secondColor": "brown",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 10,
+    "pairNumber": 10,
+    "firstColor": "red",
+    "secondColor": "slate",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 11,
+    "pairNumber": 11,
+    "firstColor": "black",
+    "secondColor": "blue",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 12,
+    "pairNumber": 12,
+    "firstColor": "black",
+    "secondColor": "orange",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 13,
+    "pairNumber": 13,
+    "firstColor": "black",
+    "secondColor": "green",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 14,
+    "pairNumber": 14,
+    "firstColor": "black",
+    "secondColor": "brown",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 15,
+    "pairNumber": 15,
+    "firstColor": "black",
+    "secondColor": "slate",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 16,
+    "pairNumber": 16,
+    "firstColor": "yellow",
+    "secondColor": "blue",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 17,
+    "pairNumber": 17,
+    "firstColor": "yellow",
+    "secondColor": "orange",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 18,
+    "pairNumber": 18,
+    "firstColor": "yellow",
+    "secondColor": "green",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 19,
+    "pairNumber": 19,
+    "firstColor": "yellow",
+    "secondColor": "brown",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 20,
+    "pairNumber": 20,
+    "firstColor": "yellow",
+    "secondColor": "slate",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 21,
+    "pairNumber": 21,
+    "firstColor": "violet",
+    "secondColor": "blue",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 22,
+    "pairNumber": 22,
+    "firstColor": "violet",
+    "secondColor": "orange",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 23,
+    "pairNumber": 23,
+    "firstColor": "violet",
+    "secondColor": "green",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 24,
+    "pairNumber": 24,
+    "firstColor": "violet",
+    "secondColor": "brown",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 25,
+    "pairNumber": 25,
+    "firstColor": "violet",
+    "secondColor": "slate",
+    "firstBinderColor": null,
+    "secondBinderColor": null
+  },
+  {
+    "id": 26,
+    "pairNumber": 26,
+    "firstColor": "white",
+    "secondColor": "blue",
+    "firstBinderColor": "white",
+    "secondBinderColor": "blue"
+  }
+]
