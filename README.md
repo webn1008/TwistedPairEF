@@ -4,7 +4,7 @@ This app is a redesigning of my app for the software development 1 course. Origi
 
 - This app was created in VS2022 with .NET 6.0
 - To run the app, once you open the solution you will need to add-migration, then update-database in the package manager console before starting it. This will seed the initial 26 pairs. The original 25 from the first app, then a 26th pair that shows the binder colors matching the pattern of the pair colors.
-- A user can interact with the app through both the MVC page, and also through the API, like with Postman. 
+- A user can interact with the app through both the MVC page, and also through the API, with Postman for instance. 
 
 ## Feature List
 - "Create an additional class which inherits one or more properties from its parent", ReadColors.cs inherits from Colors.cs
