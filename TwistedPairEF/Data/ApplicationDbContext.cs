@@ -16,11 +16,12 @@ namespace TwistedPairEF.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // jsonValue takes the data that was read with ReadColors.cs and passes it into the model builder
+            // with the for loop, adding 26 pairs to the application upon initial start
             var jsonValue = ReadColors.Read();
+            
             for (var i = 0; i < jsonValue.Count; i++)
             {
-
-
                 modelBuilder.Entity<PairModel>().HasData(new PairModel
                 {
                     Id = jsonValue[i].Id,

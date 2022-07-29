@@ -1,17 +1,10 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.IO;
 
 namespace TwistedPairEF
 {
     public class ReadColors : Colors
     {
         public static string fileName;
-
-        public interface IReadColors 
-        {
-            
-        }
 
         public static List<Colors> Read()
         {
@@ -20,14 +13,11 @@ namespace TwistedPairEF
                 string fileName = "coloredPairs.json";
 
                 var path = Path.Combine(Environment.CurrentDirectory, fileName);
-               // using (StreamReader file = new StreamReader(fileName))
-                //{
-                    string jsonFile =System.IO.File.ReadAllText(path);
-                    //file.ReadToEnd();
-
+               
+                    string jsonFile = File.ReadAllText(path);
+                
                 return JsonConvert.DeserializeObject<List<Colors>>(jsonFile);
-                    
-                //}
+                
             }
             catch (Exception ex)
             {

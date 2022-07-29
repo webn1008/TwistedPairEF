@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using TwistedPairEF.Data;
 using TwistedPairEF.Models;
 
@@ -8,7 +9,10 @@ namespace TwistedPairEF.Controllers
     //[Authorize]
     public class PairModelsController : Controller
     {
+
         private readonly ApplicationDbContext _context;
+        public DateTime startDate = DateTime.Now;
+        public DateTime endDate = Convert.ToDateTime("10/31/2022");
 
         public PairModelsController(ApplicationDbContext context)
         {
