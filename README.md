@@ -8,5 +8,5 @@ This app is a redesigning of my app for the software development 1 course. Origi
 
 ## Feature List
 - "Create an additional class which inherits one or more properties from its parent", ReadColors.cs inherits from Colors.cs
-- "Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program", There is a List<Colors> used to populate the application
+- "Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program", There is a List of Colors used to populate the application
 - "Read data from an external file, such as text, JSON, CSV, etc and use that data in your application", I'm reading from coloredPairs.json and passing it to ApplicationDbContext.cs to seed the database on the first load of the application
