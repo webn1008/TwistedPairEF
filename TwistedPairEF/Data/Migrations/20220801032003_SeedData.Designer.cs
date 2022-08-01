@@ -12,8 +12,8 @@ using TwistedPairEF.Data;
 namespace TwistedPairEF.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220728194752_reseedDb2")]
-    partial class reseedDb2
+    [Migration("20220801032003_SeedData")]
+    partial class SeedData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -267,6 +267,176 @@ namespace TwistedPairEF.Data.Migrations
                             FirstColor = "white",
                             PairNumber = 2,
                             SecondColor = "orange"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            FirstColor = "white",
+                            PairNumber = 3,
+                            SecondColor = "green"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            FirstColor = "white",
+                            PairNumber = 4,
+                            SecondColor = "brown"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            FirstColor = "white",
+                            PairNumber = 5,
+                            SecondColor = "slate"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            FirstColor = "red",
+                            PairNumber = 6,
+                            SecondColor = "blue"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            FirstColor = "red",
+                            PairNumber = 7,
+                            SecondColor = "orange"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            FirstColor = "red",
+                            PairNumber = 8,
+                            SecondColor = "green"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            FirstColor = "red",
+                            PairNumber = 9,
+                            SecondColor = "brown"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            FirstColor = "red",
+                            PairNumber = 10,
+                            SecondColor = "slate"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            FirstColor = "black",
+                            PairNumber = 11,
+                            SecondColor = "blue"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            FirstColor = "black",
+                            PairNumber = 12,
+                            SecondColor = "orange"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            FirstColor = "black",
+                            PairNumber = 13,
+                            SecondColor = "green"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            FirstColor = "black",
+                            PairNumber = 14,
+                            SecondColor = "brown"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            FirstColor = "black",
+                            PairNumber = 15,
+                            SecondColor = "slate"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            FirstColor = "yellow",
+                            PairNumber = 16,
+                            SecondColor = "blue"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            FirstColor = "yellow",
+                            PairNumber = 17,
+                            SecondColor = "orange"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            FirstColor = "yellow",
+                            PairNumber = 18,
+                            SecondColor = "green"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            FirstColor = "yellow",
+                            PairNumber = 19,
+                            SecondColor = "brown"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            FirstColor = "yellow",
+                            PairNumber = 20,
+                            SecondColor = "slate"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            FirstColor = "violet",
+                            PairNumber = 21,
+                            SecondColor = "blue"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            FirstColor = "violet",
+                            PairNumber = 22,
+                            SecondColor = "orange"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            FirstColor = "violet",
+                            PairNumber = 23,
+                            SecondColor = "green"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            FirstColor = "violet",
+                            PairNumber = 24,
+                            SecondColor = "brown"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            FirstColor = "violet",
+                            PairNumber = 25,
+                            SecondColor = "slate"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            FirstBinderColor = "white",
+                            FirstColor = "white",
+                            PairNumber = 26,
+                            SecondBinderColor = "blue",
+                            SecondColor = "blue"
                         });
                 });
 
