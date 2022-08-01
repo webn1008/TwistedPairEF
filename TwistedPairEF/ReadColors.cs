@@ -29,7 +29,7 @@ namespace TwistedPairEF
 
         private static void ReportError(Exception ex)
         {
-            throw new InvalidOperationException("File not found, please verify the location and name of the file. This is typically in TwistedPair\\bin\\Debug\\net5.0, or TwistedPair\\bin\\Release\\TwistedPair, and named coloredPairs.json. Program will close.");
+            throw new InvalidOperationException("File not found, please verify the location and name of the file. This is typically in C:\\Users\\Tony\\source\\repos\\TwistedPairEF\\TwistedPairEF, and named coloredPairs.json. Program will close.");
         }
     }
 }
